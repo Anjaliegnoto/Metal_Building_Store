@@ -1,0 +1,261 @@
+/*advance search header css*/
+.main-container.get-quote-container {
+	background: #0E1F1D;
+	position: relative;
+	height: 100%;
+}
+
+.main-container.get-quote-container .sub-container-100 {
+	height: 100%;
+}
+
+.get-quote-container .cancel-icon {
+	position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.get-quote-container .get-quote {
+	display: flex;
+	padding: 30px 25px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 30px;
+	align-self: stretch;
+}
+
+.get-quote-container .get-quote .get-quote-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 6px;
+	align-self: stretch;
+}
+
+.get-quote-container .get-quote .get-quote-header h1.heading {
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px; 
+	color: #ffffff;
+}
+
+.get-quote-container .get-quote .get-quote-header p.description {
+	margin: 0;
+	font-family: 'Manrope', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: #F2F3F4;
+}
+
+.get-quote-container .get-quote .form {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	gap: 16px;
+	align-self: stretch;
+	flex-wrap: wrap;
+}
+
+.get-quote-container .get-quote .form .row {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	gap: 16px;
+	align-self: stretch;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/*.get-quote-container .get-quote .form .row.column-2 {
+	width: 50%;
+}
+
+.get-quote-container .get-quote .form .row .input {
+	width: 100%;
+}*/
+
+.get-quote-container .get-quote .form .row select {
+	display: flex;
+	min-height: 48px;
+	padding: 10px 12px;
+	align-items: center;
+	gap: 10px;
+	flex: 1 0 0;
+    border-radius: 4px;
+	border: 1px solid #9FA5A5;
+	background: #060E0D;
+	-webkit-appearance: none;
+    /*width: 116px;*/
+    color: #9FA5A5;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	outline: 0px;
+
+    background-image: url("../images/expand_more.svg");
+    background-size: 24px;
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+}
+
+.get-quote-container .get-quote .form .row .input.state select {
+	/*width:  100%;*/
+}
+
+@supports (-moz-appearance:none) {
+	.get-quote-container .get-quote .form .row select {
+		line-height: 25px;
+	}
+}
+
+.get-quote-container .get-quote .form .row input[type="text"] {
+    /*width: 50%;*/
+}
+
+.get-quote-container .get-quote .form .row input,
+.get-quote-container .get-quote .form .row textarea {
+	display: flex;
+    width: 50%;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 4px;
+	border: 1px solid #9FA5A5;
+	background: #060E0D;
+	-webkit-appearance: none;
+    color: #9FA5A5;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-quote-container .get-quote .form .row textarea {
+	line-height: 22px;
+}
+
+.get-quote-container .get-quote .form .row .call-check {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #FFFFFF;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.get-quote-container .get-quote .form .row .call-check input {
+	-webkit-appearance: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.get-quote-container .get-quote .form .row .call-check label {
+	padding-left: 24px;
+	background-image: url("../images/checkbox.svg");
+	background-image: url("../images/checkbox_blank.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.get-quote-container .get-quote .form .row .call-check input:checked ~ label {
+	background-image: url("../images/checkbox.svg");
+}
+
+.get-quote-container .get-quote .submit-btn {
+	display: flex;
+	padding: 10px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	align-self: stretch;
+	border-radius: 10px;
+	background: #0F645B;
+	text-decoration: none;
+}
+
+.get-quote-container .get-quote .submit-btn span {
+	font-family: Circular Std Book;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/*vector image css*/
+.vector-img {
+	display: grid;
+}
+
+.vector-img img{
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+}
+
+/*popup open close css*/
+.quote-popup {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    visibility: hidden;
+    display: none;
+    background: #0E1F1D;
+}
+
+.quote-popup.show {
+    display: block;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.quote-popup .popup-inner-container {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 420px) {
+	
+
+}
+
+@media only screen and (max-width: 360px) {
+	
+
+}
